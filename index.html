@@ -1,25 +1,181 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>我的个人主页</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈欣语 - 个人主页</title>
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f5f7;
+  color: #333;
+  font-family: "Microsoft YaHei", sans-serif;
+  line-height: 1.6;
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  background-color: #e8eaed;
+  padding: 12px 16px;
+  border-radius: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.nav a:hover {
+  background-color: #d9dce0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dde0e5;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.box {
+  background-color: #e8eaed;
+  border: 1px solid #dde0e5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.box h2 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 28px 0 10px;
+}
+
+ul {
+  background-color: #ffffff;
+  border: 1px solid #dde0e5;
+  border-radius: 8px;
+  padding: 16px 16px 16px 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  background-color: #ffffff;
+  border: 1px solid #dde0e5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.work {
+  flex: 1 1 280px; 
+  background-color: #ffffff;
+  border: 1px solid #dde0e5;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.work-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.work h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+    </style>
 </head>
 <body>
-  <h1>你好，我是陈欣语</h1>
-  <img class="avatar" src="images/avatar.jpg">
-  <div class="box">
-    <h2>关于我</h2>
-    <p>我是上外教育技术学专业的大一学生，喜欢探索和学习新事物。</p>
-  </div>
-  <h2>我的兴趣</h2>
-  <ul>
-    <li>听音乐</li>
-    <li>阅读</li>
-    <li>编程学习</li>
-  </ul>
-  <h2>正在学习的内容</h2>
-  <p>Python编程、HTML网页制作、教育技术相关课程。</p>
-  <a href="https://github.com">访问我的GitHub</a>
+    <div class="nav">
+        <a href="#home">首页</a>
+        <a href="#intro">关于我</a>
+        <a href="#works">我的作品</a>
+    </div>
+
+    <div id="home" class="home">
+      <img class="avatar" src="images/avatar.jpg">
+      <div id="intro" class="intro">
+            <h1>你好，我是陈欣语</h1>
+            <div class="box">
+                <h2>关于我</h2>
+                <p>我是上外教育技术学专业的大一学生，喜欢探索和学习新事物。</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>我的兴趣</h2>
+    <ul>
+        <li>听音乐</li>
+        <li>阅读</li>
+        <li>编程学习</li>
+    </ul>
+
+    <h2>正在学习的内容</h2>
+    <p>Python编程、HTML网页制作、教育技术相关课程。</p>
+
+ <h2>我的作品</h2>
+<div class="works">
+    <div class="work">
+        <h3><a href="https://isabexy.github.io/self-introduction" target="_blank">个人主页</a></h3>
+        <p>HTML+CSS个人作品集网页</p>
+    </div>
+    <div class="work">
+        <h3><a href="https://github.com/Isabexy/self-introduction" target="_blank">Github</a></h3>
+        <p>Github仓库</p>
+    </div>
+    <div class="work">
+        <h3><a href="images/电车轨道.jpg" target="_blank">摄影集</a></h3>
+        <p>日常摄影作品</p>
+    </div>
+</div>
+
+
 </body>
 </html>
