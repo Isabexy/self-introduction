@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="陈欣语的个人主页 —— 上外教育技术学在读，记录学习、兴趣与作品。">
+    <meta name="theme-color" content="#faf6f1">
     <title>陈欣语 - 个人主页</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
     <nav class="nav" aria-label="站内导航">
-        <a href="#home" class="active">首页</a>
-        <a href="#about">关于我</a>
-        <a href="#learning">正在学习</a>
-        <a href="#works">我的作品</a>
-        <a href="#contact">联系我</a>
+        <div class="nav-inner">
+            <span class="nav-pill" aria-hidden="true"></span>
+            <a href="#home" class="nav-link active">首页</a>
+            <a href="#about" class="nav-link">关于我</a>
+            <a href="#learning" class="nav-link">正在学习</a>
+            <a href="#works" class="nav-link">我的作品</a>
+            <a href="#contact" class="nav-link">联系我</a>
+            <span class="nav-progress" aria-hidden="true"></span>
+        </div>
     </nav>
 
     <header id="home" class="hero">
-        <img class="avatar" src="images/avatar.jpg" alt="陈欣语的头像：水彩风格的兔子插画">
-        <div class="hero-text">
+        <div class="avatar-ring">
+            <img class="avatar" src="images/avatar.jpg" alt="陈欣语的头像：水彩风格的兔子插画">
+        </div>
+        <div class="hero-text reveal">
             <p class="hero-greeting">你好，我是</p>
             <h1>陈欣语</h1>
             <p class="hero-tagline">上海外国语大学 · 教育技术学专业 · 大一在读</p>
@@ -32,11 +40,11 @@
         <section id="about" class="section">
             <h2>🌱 关于我</h2>
             <div class="about-grid">
-                <div class="card">
+                <div class="card reveal">
                     <h3>自我介绍</h3>
                     <p>我是上外教育技术学专业的大一学生，对「技术 + 教育」的交叉领域充满好奇。平时喜欢听音乐、阅读，也在慢慢学习编程，希望做出属于自己的作品。</p>
                 </div>
-                <div class="card">
+                <div class="card reveal" style="--delay: 100ms">
                     <h3>我的兴趣</h3>
                     <div class="chips">
                         <span class="chip">🎵 听音乐</span>
@@ -51,15 +59,15 @@
         <section id="learning" class="section">
             <h2>🚀 正在学习的内容</h2>
             <div class="about-grid">
-                <div class="card">
+                <div class="card reveal">
                     <h3>Python 编程</h3>
                     <p>从基础语法开始，练习用 Python 解决小问题。</p>
                 </div>
-                <div class="card">
+                <div class="card reveal" style="--delay: 90ms">
                     <h3>HTML / CSS</h3>
                     <p>学习网页结构与样式，正在动手制作个人主页。</p>
                 </div>
-                <div class="card">
+                <div class="card reveal" style="--delay: 180ms">
                     <h3>教育技术课程</h3>
                     <p>探索技术如何更好地服务于学习与教学。</p>
                 </div>
@@ -69,18 +77,18 @@
         <section id="works" class="section">
             <h2>🎨 我的作品</h2>
             <div class="works">
-                <a class="work" href="https://isabexy.github.io/self-introduction" target="_blank" rel="noopener">
+                <a class="work reveal" href="https://isabexy.github.io/self-introduction" target="_blank" rel="noopener">
                     <div class="work-cover cover-home">🏠</div>
                     <h3>个人主页</h3>
                     <p>HTML + CSS 制作的第一个个人网页，也就是你现在看到的这一页。</p>
                 </a>
-                <a class="work" href="https://github.com/Isabexy/self-introduction" target="_blank" rel="noopener">
+                <a class="work reveal" href="https://github.com/Isabexy/self-introduction" target="_blank" rel="noopener" style="--delay: 100ms">
                     <div class="work-cover cover-github">🐙</div>
                     <h3>GitHub 仓库</h3>
                     <p>本网站的源代码仓库，会随着学习持续更新。</p>
                 </a>
-                <a class="work" href="images/电车轨道.jpg" target="_blank" rel="noopener">
-                    <img class="work-img" src="images/电车轨道.jpg" alt="街边的有轨电车道与蓝天绿树">
+                <a class="work reveal" href="images/电车轨道.jpg" target="_blank" rel="noopener" style="--delay: 200ms">
+                    <img class="work-img" src="images/电车轨道.jpg" alt="街边的有轨电车道与蓝天绿树" loading="lazy">
                     <h3>摄影集</h3>
                     <p>日常随手拍：阳光下的有轨电车道。</p>
                 </a>
@@ -89,7 +97,7 @@
 
         <section id="contact" class="section">
             <h2>📮 联系我</h2>
-            <div class="card contact-card">
+            <div class="card contact-card reveal">
                 <p>如果你也对教育技术、编程或者摄影感兴趣，欢迎来找我交流！</p>
                 <a class="btn" href="https://github.com/Isabexy" target="_blank" rel="noopener">
                     GitHub @Isabexy
